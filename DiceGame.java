@@ -4,6 +4,9 @@ public class DiceGame{
     public static void main(String[] args){
         int d1,d2;
         Random rand=new Random();
+        System.out.print("> ");
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Hello, "+sc.next()+"!");
         System.out.println("Rolling dice...");
         d1=rand.nextInt(6)+1;
         d2=rand.nextInt(6)+1;
