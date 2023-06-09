@@ -6,7 +6,8 @@ public class DiceGame{
         Random rand=new Random();
         System.out.print("> ");
         Scanner sc=new Scanner(System.in);
-        System.out.println("Hello, "+sc.next()+"!");
+        String name=sc.next();
+        System.out.println("Hello, "+name+"!");
         System.out.println("Rolling dice...");
         d1=rand.nextInt(6)+1;
         d2=rand.nextInt(6)+1;
@@ -14,9 +15,9 @@ public class DiceGame{
         System.out.println("Die 2: "+d2);
         System.out.println("Total value: "+(d1+d2));
         if((d1+d2)>7){
-            System.out.println("You won");
+            System.out.println(name+" won!");
         }else{
-            System.out.println("You lost.");
+            System.out.println(name+" lost.");
         }
     }
 }
